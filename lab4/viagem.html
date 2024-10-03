@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Intenção de Viagem</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Regista a tua intenção de viagem para Las Vegas</h1>
+    </header>
+
+    <nav>
+        <a href="index.html" class="home-link">Home</a>
+        <a href="local.html" class="localizacao-link">Localização</a>
+        <a href="multimedia.html" class="multimedia-link">Multimédia</a>
+        <a href="info.html" class="info-link">Informação</a>
+        <a href="quizz.html" class="quizz-link">Quizz</a>
+        <a href="viagem.html" class="viagem-link">Viagem</a>
+    </nav>
+
+    <h2>Formulário de Intenção de Viagem</h2>
+
+    <form id="intencao-viagem" method="post" action="https://postman-echo.com/post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Introduza o seu nome" size="30" maxlength="30" autocomplete="name" required>
+
+            <label for="apelido">Apelido:</label>
+            <input type="text" name="apelido" id="apelido" placeholder="Introduza o seu apelido" size="30" maxlength="30" autocomplete="family-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Introduza o seu email" size="30" required>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Detalhes da Viagem</legend>
+
+            <label for="data-partida">Data de Partida:</label>
+            <input type="date" name="data-partida" id="data-partida" required>
+
+            <label for="data-regresso">Data de Regresso:</label>
+            <input type="date" name="data-regresso" id="data-regresso" required>
+
+            <label for="num-passageiros">Número de Passageiros:</label>
+            <input type="number" name="num-passageiros" id="num-passageiros" min="1" max="20" required>
+
+            <label for="transporte">Meio de Transporte Favorito:</label>
+            <select id="transporte" name="transporte" required>
+                <option value="" disabled selected>Selecione um meio de transporte</option>
+                <option value="carro">Carro</option>
+                <option value="comboio">Comboio</option>
+                <option value="aviao">Avião</option>
+                <option value="outro">Outro</option>
+            </select><br><br>
+
+            <label for="servico">Serviço que deseja:</label><br>
+            <input type="radio" name="servico" id="basico" value="Básico" required>
+            <label for="basico">Básico</label>
+
+            <input type="radio" name="servico" id="basico" value="Básico" required>
+            <label for="basico">Plus</label>
+
+            <input type="radio" name="servico" id="premium" value="Premium">
+            <label for="premium">Premium</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Outros Detalhes</legend>
+
+            <label for="pedidos-especiais">Pedidos Especiais:</label>
+            <textarea id="pedidos-especiais" name="pedidos-especiais" rows="4" cols="50" placeholder="Informe seus pedidos especiais" maxlength="500"></textarea>
+
+            <label for="gastos">Valor estimado por pessoa e por dia (em €):</label>
+            <input type="number" name="gastos" id="gastos" min="0" step="0.01" placeholder="€" required>
+        </fieldset><br>
+
+        <button type="submit">Enviar Intenção de Viagem</button>
+        <button type="reset">Reset Formulário</button>
+    </form>
+
+    <footer>
+        <p>Pedro Ramos | Lusofona | 2º ano</p>
+    </footer>
+</body>
+
+</html>
