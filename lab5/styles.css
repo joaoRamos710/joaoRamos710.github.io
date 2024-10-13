@@ -1,3 +1,10 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -86,6 +93,12 @@ main img {
     transform: scale(1.1);
 }
 
+.galeria a {
+    margin: 10px;
+    cursor: zoom-in; 
+}
+
+
 #Fotografias,
 #Videos
 #Poema {
@@ -110,51 +123,67 @@ main img {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-nav .home-link::before {
+
+nav a:link {
+    color: #fff; 
+}
+
+nav a:visited {
+    color: #ddd; 
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+    position: relative;
+}
+
+nav a::before {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    content: "\f015"; 
+    content: ""; 
     margin-right: 8px;
 }
 
+nav a:hover::before {
+    content: "\f054"; 
+    font-family: "Font Awesome 6 Free";
+}
+
+nav .home-link::before {
+    content: "\f015"; 
+}
 
 nav .localizacao-link::before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
     content: "\f3c5";
-    margin-right: 8px;
 }
-
 
 nav .multimedia-link::before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
     content: "\f03d"; 
-    margin-right: 8px;
 }
 
-
 nav .info-link::before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
     content: "\f129"; 
-    margin-right: 8px;
 }
 
 nav .quizz-link::before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
     content: "\f059"; 
-    margin-right: 8px;
 }
-
 
 nav .viagem-link::before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
     content: "\f072"; 
-    margin-right: 8px;
 }
+
+nav .pontosinteresse-link::before {
+    content: "\f66f"; 
+    
+}
+
+nav .capitais-link::before {
+    content: "\f64f"; 
+    
+}
+
 label {
     font-size: small;
 }
@@ -182,6 +211,10 @@ p {
     margin-bottom: 20px;
 }
 
+h1 {
+text-transform: uppercase;
+}
+
 h2, h3 {
     margin-top: 30px;
     margin-bottom: 15px;
@@ -200,6 +233,88 @@ fieldset {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+/*listas*/
+ol {
+    list-style-type: lower-roman;
+    font-size: 1.5em;
+}
+
+
+ol li:nth-child(1) {
+    color: red;
+}
+
+ol li:nth-child(2) {
+    color: blue;
+}
+
+ol li:nth-child(3) {
+    color: green;
+}
+
+ol li:nth-child(4) {
+    color: purple;
+}
+
+ol li:nth-child(5) {
+    color: orange;
+}
+
+
+ul {
+    list-style-type: none;
+    font-size: 1.5em;
+}
+
+ul li::before {
+    content: "\f005"; 
+    font-family: "Font Awesome 6 Free";
+    margin-right: 10px;
+    color: gold; 
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+table td, table th {
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+
+table th {
+    background-color: #333;
+    color: #fff;
+}
+
+
+table tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+table tr:nth-child(2) {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+}
+
+
+table tr:nth-child(5) {
+    background-color: rgba(255, 165, 0, 0.5);
+    font-style: italic;
+}
+
 
 
 
