@@ -5,6 +5,8 @@
 }
 
 
+
+
 article #poema {
     display: flex;
     justify-content: center;
@@ -181,6 +183,7 @@ h2 {
 
 .circulo:hover {
     transform: scale(1.1); 
+}
 
 .hover-text {
     display: none; 
