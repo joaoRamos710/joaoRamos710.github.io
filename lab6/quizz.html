@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quizz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Las Vegas</h1>
+    </header>
+    <nav>
+        <a href="index.html" class="home-link">Home</a>
+        <a href="local.html" class="localizacao-link">Localização</a>
+        <a href="multimedia.html" class="multimedia-link">Multimédia</a>
+        <a href="info.html" class="info-link">Informação</a>
+        <a href="quizz.html" class="quizz-link">Quizz</a>
+        <a href="viagem.html" class="viagem-link">Viagem</a>
+        <a href="pontosinteresse.html" class="pontosinteresse-link">Pontos Interesse</a>
+        <a href="capitais.html" class="capitais-link">Capitais</a>
+    </nav>
+
+    <p> </p>
+
+    <div class="image-gallery"></div>
+        <img src="images/caption.jpg" alt="A Minha Cidade">
+        <img src="images/image4.jpg" alt="A Minha Cidade">
+        <img src="images/image5.jpg" alt="A Minha Cidade">
+        <img src="images/image6.jpg" alt="A Minha Cidade">
+        <img src="images/image7.jpg" alt="A Minha Cidade">
+    </div>
+
+    <h2>Quizz</h2>
+
+    <form id="quiz-lasvegas" method="get" action="https://postman-echo.com/get">
+       
+        
+        
+            <fieldset>
+                <legend>Seção 1: Dados Pessoais</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Introduza o seu nome" size="30" maxlength="30" autocomplete="name" autofocus required>
+                
+                <label for="apelido">Apelido:</label>
+                <input type="text" name="apelido" id="apelido" placeholder="Introduza o seu apelido" size="30" maxlength="30" autocomplete="apelido" autofocus required>
+                
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="Introduzaz o seu email" size="30" maxlength="30" autocomplete="email" autofocus required>
+    
+            </fieldset>
+
+
+        <fieldset>
+            <legend>Seção 2: Preferências de viagem</legend>
+        
+            <fieldset>
+                <label for="cor-favorita">Escolha a cor que mais lembra Las Vegas:</label>
+                <input type="color" id="cor-favorita" name="cor-favorita" value="#ff0000" required>
+            </fieldset><br>
+
+            <fieldset>
+                <label for="quantidade-visitas">Quantas vezes já visitou Las Vegas?</label>
+                <input type="number" id="quantidade-visitas" name="quantidade-visitas" min="0" max="50" step="1" required>
+            </fieldset><br>
+            
+            <fieldset>
+              <label for="avaliacao">Avalie sua experiência em Las Vegas (1 a 10):</label>
+              <input type="range" id="avaliacao" name="avaliacao" min="1" max="10" step="1" required>
+            </fieldset><br>
+
+
+       </fieldset>
+
+       
+        
+        <fieldset>
+            <legend>Seção 3: Perguntas</legend>
+             <fieldset>
+            
+                <legend>1. Las Vegas é conhecida como a "Capital Mundial do..."</legend>
+            
+                <input type="radio" name="capital" id="entretenimento" value="Entretenimento" required>
+                <label for="entretenimento">A) Entretenimento</label><br>
+            
+                <input type="radio"  name="capital" id="tecnologia"value="Tecnologia">
+                <label for="tecnologia">B) Tecnologia</label><br>
+           
+                <input type="radio"  name="capital" id="musica-country" value="Música Country">
+                <label for="musica-country">C) Música Country</label><br>
+            
+                <input type="radio" name="capital" id="esportes-radicais" value="Esportes Radicais">
+                <label for="esportes-radicais">D) Esportes Radicais</label>
+            </fieldset><br>
+
+
+            <fieldset>
+                <legend>2. A famosa placa de boas-vindas de Las Vegas diz "Welcome to Las Vegas, Nevada"</legend>
+
+                <input type="radio" nome="placa" id="verdadeiro" value="Verdadeiro" required>
+                <label for="verdadeiro">Verdadeiro</label>
+
+                <input type="radio" name="placa" id="falso" value="Falso">
+                <label for="falso">Falso</label>
+            
+            </fieldset><br>
+
+
+
+            <fieldset>
+                <legend>3. Quantos casamentos, em média, acontecem diariamente em Las Vegas? </legend>
+
+                <input type="radio" nome="casamentos" id="150" value="150">
+                <label for="150">A) 150</label>
+
+                <input type="radio" nome="casamentos" id="30" value="30">
+                <label for="30">B) 30</label>
+
+                <input type="radio" nome="casamentos" id="200" value="200">
+                <label for="200">C) 200</label>
+
+                <input type="radio" nome="casamentos" id="50" value="50" required>
+                <label for="50">D) 50</label>
+
+            </fieldset><br>
+
+            <fieldset>
+                <legend>4. Qual dos seguintes casinos foi o primeiro a ser construido em Strip? </legend>
+
+                <select id="casino-primeiro" name="casino-primeiro" required>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="The Venetian">A) The Venetian</option>
+                    <option value="Bellagio">B) Bellagio</option>
+                    <option value="Flamingo">C) Flamingo</option>
+                    <option value="MGM Grand">D) MGM Grand</option>
+                </select>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>5. Completa a frase: Las Vegas é tão brilhante à noite que pode ser vista do  <input type="text" id="local-brilho" name="local-brilho" placeholder="Digite a tua resposta" size="30" maxlength="50" required></legend>
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Seção 4: Anexe uma imagem da sua última viagem a Las Vegas</legend>
+                <label for="foto-lasvegas">Carregue uma foto:</label>
+                <input type="file" id="foto-lasvegas" name="foto-lasvegas" accept="image/*" required>
+            </fieldset>
+
+
+    </fieldset>
+
+    <button type="submit">Enviar Quiz</button>
+    <button type="reset" form="quiz-lasvegas">Reset Quiz</button>
+    
+    </form>
+    
+
+   
+
+    <aside>
+        <br>
+        <h4>Let's Have Some Fun</h4>
+        <br>
+    </aside>
+   
+    <footer>
+        <p>Pedro Ramos | Lusofona | 2 ano</p>
+    </footer>
+
+</body>
+
+</html>

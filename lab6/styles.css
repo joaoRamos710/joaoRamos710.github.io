@@ -1,0 +1,326 @@
+
+* {
+    margin:0;  
+    padding:0;  
+    box-sizing: border-box; 
+}
+
+
+
+body {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #ffffff, rgb(175, 177, 141)); 
+    color: #fff;
+}
+
+header {
+    background: linear-gradient(to bottom, rgb(198, 221, 110), hwb(52, 16%, 27%)); 
+    color: hsl(0, 0%, 0%);
+    padding: 25px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(124, 124, 124);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+nav a::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f012"; 
+    margin-right: 8px;
+}
+
+section img {
+    display: block; 
+    margin: 20px auto;
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    background-color: hsla(0, 0%, 26%, 0.631);
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+main img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}
+
+.galeria a {
+    margin: 10px;
+    cursor: zoom-in; 
+}
+
+
+#Fotografias,
+#Videos
+#Poema {
+    color: hsl(0, 0%, 100%);
+    font-size: 24px;
+    border-bottom: 2px solid hsl(0, 0%, 49%);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.image-gallery img {
+    display: block; 
+    width: 300px;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+nav a:link {
+    color: #fff; 
+}
+
+nav a:visited {
+    color: #ddd; 
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+    position: relative;
+}
+
+nav a::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: ""; 
+    margin-right: 8px;
+}
+
+nav a:hover::before {
+    content: "\f054"; 
+    font-family: "Font Awesome 6 Free";
+}
+
+nav .home-link::before {
+    content: "\f015"; 
+}
+
+nav .localizacao-link::before {
+    content: "\f3c5";
+}
+
+nav .multimedia-link::before {
+    content: "\f03d"; 
+}
+
+nav .info-link::before {
+    content: "\f129"; 
+}
+
+nav .quizz-link::before {
+    content: "\f059"; 
+}
+
+nav .viagem-link::before {
+    content: "\f072"; 
+}
+
+nav .pontosinteresse-link::before {
+    content: "\f66f"; 
+    
+}
+
+nav .capitais-link::before {
+    content: "\f64f"; 
+    
+}
+
+label {
+    font-size: small;
+}
+
+input {
+    font-size: medium;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+h1 {
+text-transform: uppercase;
+}
+
+h2, h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.galeria a {
+    margin: 10px;
+}
+
+iframe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*listas*/
+ol {
+    list-style-type: lower-roman;
+    font-size: 1.5em;
+}
+
+
+ol li:nth-child(1) {
+    color: red;
+}
+
+ol li:nth-child(2) {
+    color: blue;
+}
+
+ol li:nth-child(3) {
+    color: green;
+}
+
+ol li:nth-child(4) {
+    color: purple;
+}
+
+ol li:nth-child(5) {
+    color: orange;
+}
+
+
+ul {
+    list-style-type: none;
+    font-size: 1.5em;
+}
+
+ul li::before {
+    content: "\f005"; 
+    font-family: "Font Awesome 6 Free";
+    margin-right: 10px;
+    color: gold; 
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+table td, table th {
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+
+table th {
+    background-color: #333;
+    color: #fff;
+}
+
+
+table tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+table tr:nth-child(2) {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+}
+
+
+table tr:nth-child(5) {
+    background-color: rgba(255, 165, 0, 0.5);
+    font-style: italic;
+}
+
+
+
+
+        
