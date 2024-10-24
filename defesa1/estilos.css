@@ -25,16 +25,24 @@ header h1 {
 }
 
 nav a {
-    color: white;
+    padding: 20px;
     text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    background-color: #555;
-    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+nav a:link, nav a:visited {
+    color: #f2f2f2;
 }
 
 nav a:hover {
-    background-color: #777;
+    background-color: #555;
+    color: #fff;
+}
+
+nav a:active {
+    background-color: #222;
+    color: #fff;
 }
 
 
