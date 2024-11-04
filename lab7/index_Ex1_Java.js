@@ -50,12 +50,12 @@ document.querySelector('button[type="button"]').addEventListener('click', functi
 
 
 
-let contador = 0; 
+let count = 0; 
 const botaoConta = document.querySelector('#conta');
-const elementoContador = document.querySelector('#contador');
+const elementoContador = document.querySelector('#count');
 botaoConta.addEventListener('click', function() {
-    contador++;  
-    elementoContador.textContent = `${contador}`;  
+    count++;  
+    elementoContador.textContent = `${count}`;  
 });
 
 
