@@ -41,3 +41,23 @@ inputBox.addEventListener('input', function() {
         this.style.backgroundColor = ''; 
     }
 });
+
+document.querySelector('button[type="button"]').addEventListener('click', function() {
+    const corInput = document.getElementById('cor-input').value.trim();
+    document.body.style.backgroundColor = corInput;
+});
+
+
+
+
+let contador = 0; 
+const botaoConta = document.querySelector('#conta');
+const elementoContador = document.querySelector('#contador');
+botaoConta.addEventListener('click', function() {
+    contador++;  
+    elementoContador.textContent = `${contador}`;  
+});
+
+
+
+
