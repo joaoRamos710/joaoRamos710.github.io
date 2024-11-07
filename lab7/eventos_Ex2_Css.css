@@ -1,0 +1,109 @@
+/* Resetando margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Altura total da página */
+}
+header {
+    position: sticky; /* Fixa o header na parte superior */
+    top: 0; /* Define a posição superior do header */
+    display: flex; /* Flexbox para disposição do conteúdo */
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    background-color: #333; /* Cor de fundo escura */
+    color: white; /* Cor do texto em branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+}
+
+header h1 {
+    font-size: 24px; /* Tamanho do título */
+    margin: 0; /* Remove margem */
+}
+body {
+    font-family: 'Arial', sans-serif; /* Você pode usar uma fonte diferente se preferir */
+    background-color: #f8f9fa; /* Um fundo claro e suave */
+    text-align: center;
+    display: flex; /* Flexbox para alinhar itens */
+    flex-direction: column; /* Organiza os filhos na coluna */
+}
+
+h2 {
+    color: #343a40; /* Cor do título escura */
+    margin: 20px 0; /* Margem vertical para o título */
+}
+
+.container {
+    display: flex; /* Flexbox para disposição das imagens */
+    flex-wrap: wrap; /* Permite que as imagens quebrem a linha */
+    justify-content: center; /* Centraliza as imagens */
+    margin-bottom: 20px;
+}
+
+img {
+    width: 500px; /* Largura fixa */
+    height: auto; /* Mantém a proporção */
+    margin: 10px; /* Espaçamento entre as imagens */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+img:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada ao passar o mouse */
+}
+
+.highlight {
+    transform: scale(1.1);
+    border: 2px solid #ffcc00; /* Destaque com borda */
+}
+
+form {
+    margin-top: 20px; /* Espaçamento acima do formulário */
+}
+
+input[type="text"] {
+    padding: 12px; /* Espaçamento interno */
+    width: 250px; /* Largura fixa */
+    border: 1px solid #ced4da; /* Borda suave */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: border-color 0.3s; /* Transição suave para a borda */
+}
+
+input[type="text"]:focus {
+    border-color: #66afe9; /* Cor da borda ao focar */
+    outline: none; /* Remove a borda padrão do navegador */
+}
+
+button {
+    padding: 12px 20px; /* Espaçamento interno */
+    background-color: #28a745; /* Cor do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+}
+
+button:hover {
+    background-color: #218838; /* Cor ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+#message {
+    margin-top: 20px; /* Espaçamento acima da mensagem */
+    color: #555; /* Cor do texto da mensagem */
+}
+
+footer {
+    margin-top: auto; /* Empurra o footer para o fundo */
+    padding: 15px; /* Espaço interno */
+    background-color: #343a40; /* Cor de fundo escura */
+    color: white; /* Cor do texto em branco */
+    text-align: center; /* Centraliza o texto */
+    font-size: 0.9em; /* Tamanho da fonte do footer */
+}
