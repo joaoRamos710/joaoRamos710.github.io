@@ -51,13 +51,18 @@ document.getElementById('cor-input').addEventListener('change', function() {
 
 
 
-let count = 0; 
+let count = parseInt(localStorage.getItem('count')) || 0; 
 const botaoConta = document.querySelector('#conta');
 const elementoContador = document.querySelector('#count');
+
+elementoContador.textContent = `${count}`;
+
 botaoConta.addEventListener('click', function() {
-    count++;  
-    elementoContador.textContent = `${count}`;  
+    count++;
+    elementoContador.textContent = `${count}`;
+    localStorage.setItem('count', count); 
 });
+
 
 
 document.querySelector('form').onsubmit = (e) => {
@@ -72,10 +77,11 @@ document.querySelector('form').onsubmit = (e) => {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    let counter = 0; 
+    let counter = parseInt(localStorage.getItem('automaticCounter')) || 0;
     function count() {
         counter++; 
         document.getElementById("contador").textContent = counter; 
+        localStorage.setItem('automaticCounter', counter);
     }
     setInterval(count, 1000);
 });
