@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index_Ex1_Css.css">
+</head>
+<body>
+  <section id="eventos">
+    <h1>Eventos</h1>
+    <div class="eventos-container">
+      <ol>
+        <li id="mudar-frase">Passa por aqui!</li>
+        
+        <li id="mudar-cor">
+         
+          <p id="texto">Pinta-me!</p>
+
+       
+          <div>
+            <button data-color="red" id="red">Red</button>
+            <button data-color="green" id="green">Green</button>
+            <button data-color="blue" id="blue">Blue</button>
+            </div>
+        </li>
+        
+        <li>
+      
+            <label for="texto">Experimenta escrever...</label>
+            <input type="text" name="texto" id="box-texto" placeholder="Experimenta escrever" size="30" maxlength="30" autocomplete="name" autofocus required>
+        </li>
+
+        <li>
+        
+            <legend id="escolhaCor">Escolha uma cor</legend>
+
+            <select id="cor-input" name="cor" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="white">A) White</option>
+                <option value="red">B) Red</option>
+                <option value="blue">C) Blue</option>
+               
+            </select>
+
+        </li>
+        
+        
+        <li>
+          <input type="button" name="conta" id="conta" value="Conta!">
+          <span id="count"></span> 
+        </li>
+
+        
+        <li>
+          <form id="formulario">
+           <label for="nome">Nome:</label>
+           <input type="text" name="nome" id="nome" placeholder="Introduza o seu nome" size="20" maxlength="30" autocomplete="name" autofocus required>
+           <input type="number" id="idade" name="idade" placeholder="Introduza a sua idade"  max="100"  step="1" required>
+           <button type="submit">Submit</button>
+           <p id="mensagem"></p>
+          </form>
+        </li>
+     
+        <li>
+          <legend>Automatic Counter:</legend>
+          <p id="contador">0</p>
+        </li>
+
+
+      </ol>
+    </div>
+  </section>
+
+  <footer>Pedro Ramos | Lusofona | 2º ano</footer>
+  <script src="/lab8/index_Ex1_Java.js"></script>
+
+  <!-- Código de exemplo para associar eventos com querySelector-->
+</body>
+</html>
