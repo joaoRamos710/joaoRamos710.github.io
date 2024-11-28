@@ -35,7 +35,7 @@ function criarProduto(produto) {
     artigo.innerHTML = `
         <img src="${produto.image}" alt="${produto.title}">
         <h3>${produto.title}</h3>
-        <p><strong>Preço:</strong> €${produto.price.toFixed(2)}</p>
+        <p><strong>Preço:</strong> ${produto.price.toFixed(2)}€</p>
         <p>${produto.description}</p>
         <button data-id="${produto.id}">+ Adicionar ao Cesto</button>
     `;
@@ -109,7 +109,7 @@ function criaProdutoCesto(produto) {
     artigo.innerHTML = `
         <h3>${produto.title}</h3>
         <img src="${produto.image}" alt="${produto.title}">
-        <p><strong>Preço:</strong> €${produto.price.toFixed(2)}</p>
+        <p><strong>Preço:</strong> ${produto.price.toFixed(2)}€</p>
     `;
     const botaoRemover = document.createElement("button");
     botaoRemover.textContent = "- Remover do cesto";
@@ -133,7 +133,7 @@ function removerProdutoDoCesto(produtoID) {
 function atualizaPrecoTotal() {
     const produtosSelecionados = JSON.parse(localStorage.getItem("produtos-selecionados")) || [];
     const precoTotal = produtosSelecionados.reduce((total, produto) => total + produto.price, 0);
-    document.getElementById("custo-total").textContent = `Custo Total: €${precoTotal.toFixed(2)}`;
+    document.getElementById("custo-total").textContent = `Custo Total: ${precoTotal.toFixed(2)}€`;
 }
 
 
