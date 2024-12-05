@@ -183,7 +183,14 @@ article button {
 }
 
 article button:hover {
-    background-color: rgb(113, 112, 115);
+    background-color: hsl(240, 1%, 27%);
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 
@@ -194,4 +201,21 @@ footer {
     padding: 20px;
     margin-top: auto;
     font-size: 14px;
+}
+
+
+
+section button:hover{
+    background-color: rgb(113, 112, 115);
+}
+
+section button{
+    background-color: hsl(240, 1%, 27%);
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
