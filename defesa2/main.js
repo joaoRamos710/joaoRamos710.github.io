@@ -46,7 +46,6 @@ function criarProduto(produto) {
     });
     return artigo;
 
-
 }
 
 document.getElementById("filtrar").addEventListener("change", () => {
@@ -79,7 +78,8 @@ function ordenarProdutos(ordem) {
 }
 
 document.getElementById("pesquisa").addEventListener("input", () => {
-    const textoPesquisa = document.getElementById("pesquisa").value.toLowerCase();
+    const textoPesquisa = document.getElementById("pesquisa").value.toLowerCase() produto.title.toLowerCase().includes(textoPesquisa) ||
+    produto.description.toLowerCase().includes(textoPesquisa);
     pesquisarProdutos(textoPesquisa);
 });
 
