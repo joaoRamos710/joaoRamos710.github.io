@@ -94,8 +94,6 @@ function adicionarAoCarrinho(produto) {
     atualizaCesto();
 }
 
-
-
 function atualizaCesto() {
     const listaCesto = document.getElementById("lista-cesto");
     listaCesto.innerHTML = "";
