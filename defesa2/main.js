@@ -36,6 +36,7 @@ function criarProduto(produto) {
         <img src="${produto.image}" alt="${produto.title}">
         <h3>${produto.title}</h3>
         <p><strong>Preço:</strong> ${produto.price.toFixed(2)}€</p>
+        <button menosInfo=""> Menos Info
         <p>${produto.description}</p>
         <p><strong>Rating:<strong> ${produto.rating}%</p>
         <button data-id="${produto.id}">+ Adicionar ao Cesto</button>
@@ -44,6 +45,8 @@ function criarProduto(produto) {
         adicionarAoCarrinho(produto);
     });
     return artigo;
+
+
 }
 
 document.getElementById("filtrar").addEventListener("change", () => {
