@@ -38,7 +38,7 @@ function criarProduto(produto) {
         <p><strong>Preço:</strong> ${produto.price.toFixed(2)}€</p>
         <button menosInfo=""> Menos Info
         <p>${produto.description}</p>
-        <p><strong>Rating:<strong> ${produto.rating}%</p>
+        <p><strong>Rating:<strong> ${produto.rating.rate}%</p>
         <button data-id="${produto.id}">+ Adicionar ao Cesto</button>
     `;
     artigo.querySelector("button").addEventListener("click", () => {
@@ -76,13 +76,12 @@ function ordenarProdutos(ordem) {
     }
     carregarProdutos(produtosOrdenados);
 }
-
-document.getElementById("pesquisa").addEventListener("input", () => {
-    const textoPesquisa = document.getElementById("pesquisa").value.toLowerCase() produto.title.toLowerCase().includes(textoPesquisa) ||
-    produto.description.toLowerCase().includes(textoPesquisa);
-    pesquisarProdutos(textoPesquisa);
-});
-
+function pesquisarProdutos(textoPesquisa) {
+    const produtosFiltrados = produtos.filter(produto => 
+        produto.title.toLowerCase().includes(textoPesquisa) || produto.description.toLowerCase.includes(textoPesquisa)
+    );
+    carregarProdutos(produtosFiltrados);
+}
 function pesquisarProdutos(textoPesquisa) {
     const produtosFiltrados = produtos.filter(produto => 
         produto.title.toLowerCase().includes(textoPesquisa)
