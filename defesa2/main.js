@@ -70,9 +70,9 @@ document.getElementById("ordenar").addEventListener("change", () => {
 function ordenarProdutos(ordem) {
     let produtosOrdenados = [...produtos];
     if (ordem === "crescente") {
-        produtosOrdenados.sort((a, b) => a.rating - b.rating);
+        produtosOrdenados.sort((a, b) => a.rating.rate - b.rating.rate);
     } else if (ordem === "decrescente") {
-        produtosOrdenados.sort((a, b) => b.rating - a.rating);
+        produtosOrdenados.sort((a, b) => b.rating.rate - a.rating.rate);
     }
     carregarProdutos(produtosOrdenados);
 }
